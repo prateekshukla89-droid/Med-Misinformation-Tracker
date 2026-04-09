@@ -177,7 +177,7 @@ If you use this tool in your research, please cite:
 
 ## Affiliation
 
-Developed at the **Division of Endocrinology, Department of Medicine, UMass Chan Medical School**, Worcester, MA.
+Developed by Prateek Shukla, MD Assistant Professor of Medicine Division of Endocrinology, Department of Medicine, UMass Chan Medical School, Worcester, MA.
 
 ## License
 
