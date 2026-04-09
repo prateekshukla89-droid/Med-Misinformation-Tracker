@@ -1,0 +1,71 @@
+# PharmaMisinfo Tracker Configuration
+# Copy this to config.yaml and fill in your API keys
+
+# API Keys (use personal accounts for these)
+api_keys:
+  news_api: ""              # https://newsapi.org — free tier (100 req/day)
+  anthropic: ""             # https://console.anthropic.com
+  reddit_client_id: ""      # https://www.reddit.com/prefs/apps
+  reddit_client_secret: ""
+  reddit_user_agent: "PharmaMisinfoTracker/1.0"
+
+# Default drug recall configuration
+recall:
+  drug_name: "metformin"
+  recall_date: "2020-06-01"
+  date_range:
+    start: "2019-01-01"
+    end: "2025-12-31"
+
+# Search terms for data collection
+search_terms:
+  primary:
+    - "metformin recall"
+    - "metformin NDMA"
+    - "metformin cancer"
+    - "metformin contamination"
+  secondary:
+    - "metformin dangerous"
+    - "metformin poison"
+    - "metformin stop taking"
+    - "berberine metformin alternative"
+    - "metformin recall FDA"
+
+# Reddit subreddits to monitor
+reddit:
+  subreddits:
+    - "diabetes"
+    - "diabetes_t2"
+    - "Supplements"
+    - "AlternativeHealth"
+    - "conspiracy"
+    - "pharmacy"
+  max_posts_per_subreddit: 500
+
+# Google Trends configuration
+google_trends:
+  keywords:
+    - "metformin recall"
+    - "metformin cancer"
+    - "metformin NDMA"
+    - "berberine metformin"
+  geo: "US"
+  timeframe: "2019-01-01 2025-12-31"
+
+# Classification settings
+classifier:
+  model: "claude-sonnet-4-20250514"    # LLM model for classification
+  batch_size: 10                        # items per API call
+  fallback: "rule_based"                # use rule-based if LLM unavailable
+  confidence_threshold: 0.7
+
+# Database
+database:
+  path: "data/pharma_misinfo.db"
+
+# Visualization
+visualization:
+  output_dir: "figures/"
+  dpi: 300
+  style: "publication"                  # "publication" or "dashboard"
+  font_family: "Arial"

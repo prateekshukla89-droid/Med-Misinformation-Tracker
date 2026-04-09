@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "PharmaMisinfo Tracker"
+abstract: >-
+  An open-source framework for monitoring pharmaceutical misinformation
+  following drug recalls. Collects, classifies, and visualizes
+  misinformation content across news, social media, forums, and
+  commercial health sites.
+authors:
+  - family-names: "[Your Last Name]"
+    given-names: "[Your First Name]"
+    orcid: "https://orcid.org/XXXX-XXXX-XXXX-XXXX"
+    affiliation: >-
+      Division of Endocrinology, Department of Medicine,
+      UMass Chan Medical School, Worcester, MA
+version: 0.1.0
+date-released: "2026-04-05"
+license: MIT
+repository-code: "https://github.com/YOUR_USERNAME/pharma-misinfo-tracker"
+keywords:
+  - pharmaceutical misinformation
+  - drug recall
+  - pharmacovigilance
+  - health misinformation
+  - metformin
+  - NDMA
+  - content analysis
+  - social media monitoring
